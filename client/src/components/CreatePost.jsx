@@ -1,5 +1,5 @@
 import {Box, styled , FormControl , InputBase, Button, TextareaAutosize} from '@mui/material';
-import {AddCircle as Add, Description} from '@mui/icons-material';
+import {AddCircle as Add} from '@mui/icons-material';
 import { useState , useEffect, useContext } from 'react';
 import { DataContext } from '../context/Dataprovider';
 import { useLocation , useNavigate } from 'react-router-dom';
@@ -42,7 +42,7 @@ const initialPost = {
     picture:'',
     username:'',
     categories:'',
-    craetedDate: new Date()
+    createdDate: new Date()
 }
  
  
