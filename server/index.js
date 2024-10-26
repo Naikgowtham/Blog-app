@@ -5,7 +5,6 @@ import router from "./routes/route.js";
 import cors from 'cors';
 import bodyParser from "body-parser";
 
-dotenv.config();
 
 const app = express();
 app.use(cors());

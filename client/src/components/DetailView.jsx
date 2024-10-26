@@ -4,6 +4,7 @@ import { useEffect, useState , useContext } from "react";
 import { API } from "../service/api";
 import {Edit , Delete} from '@mui/icons-material';
 import {DataContext} from '../context/Dataprovider';
+import Comments from "./Comments";
 
 
 const Container = styled(Box)(({theme})=>({
@@ -98,6 +99,7 @@ const DetailView = () => {
             </Author>
 
             <Description>{post.description}</Description>
+            <Comments  post ={post}/>
         </Container>
     )
 }
